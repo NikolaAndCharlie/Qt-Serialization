@@ -12,5 +12,5 @@ set(Qt_lib Qt5::Widgets Qt5::Core)
 file(GLOB SRC src/*.cc)
 file(GLOB HDR src/*.h)
 
-add_executable(serialization WIN32 ${SRC} ${HDR})
+add_executable(serialization ${SRC} ${HDR})
 target_link_libraries(serialization ${Qt_lib})
